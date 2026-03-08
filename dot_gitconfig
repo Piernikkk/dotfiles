@@ -19,3 +19,5 @@
 	ui = auto
 [push]
 	autoSetupRemote = true
+[trailer "changeid"]
+	key = Change-Id

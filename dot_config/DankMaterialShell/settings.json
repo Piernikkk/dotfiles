@@ -123,6 +123,11 @@
       "width": 25
     },
     {
+      "id": "colorPicker",
+      "enabled": true,
+      "width": 50
+    },
+    {
       "id": "doNotDisturb",
       "enabled": true,
       "width": 25
@@ -799,6 +804,13 @@
   "builtInPluginSettings": {
     "dms_settings_search": {
       "trigger": "?"
+    },
+    "dankNotepadModule": {
+      "previewActive": false,
+      "currentFilePath": "notepad-files/untitled-1767542985183.txt",
+      "currentFileExtension": "txt",
+      "sourceContent": "auf den Sportplatz - na boisko\nauf den Tennisplatz - na kort tenisowy\nauf die Kegelbahn - na kręgielnię\nnach drauBen - na dwór\nin die Sporthalle - na halę sportową\nin die Eishalle - na lodowisko\nins Chwimmbad - na absen\nins Fitnessstudio - studio fitnessu\nins Stadion - na stadion\nin den Kraftraum - na siłownię\n\nder Badeanzug - strój kąpielowy\ndie Badehose - kąpielówki\ndie Badekappe - czepek\nder Ball - piłka\ndie Baseballmutze - czapka baseballwa\ndas Fahrrad - rower\nder Fahrradhelm - kask\ndie Handschuhe - rękawiczki\ndas Handtuch - ręcznik\nder Hockeyschlager - kij hokejowy\nder Puck - krążek hokejowy\nder Roller - hulajnoga\ndie Rollshue - rolki\nder Schlitten - sanki\nder Schlittschuhe - łyżwy\ndie Schneebrille - okulary\ndas Skateboard - deskorolka\ndie Skier - narty\ndas Snowboard - snowboard\ndie Sportkleidung - strój sportowy\ndie Sportschuhe - buty sportowe\nder Tennisschlager - rakieta tenisowa\ndie Trinkflasche - butelka",
+      "updatedAt": 1772990874547
     }
   },
   "clipboardEnterToPaste": false,

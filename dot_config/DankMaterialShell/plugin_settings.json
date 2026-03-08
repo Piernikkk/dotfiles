@@ -5,7 +5,7 @@
   "dockerManager": {
     "enabled": true,
     "terminalApp": "kitty",
-    "groupByCompose": false
+    "groupByCompose": true
   },
   "kubernetes": {
     "enabled": false
@@ -17,7 +17,7 @@
     "enabled": false
   },
   "dankNotepadModule": {
-    "enabled": false,
+    "enabled": true,
     "style": "catppuccin-mocha"
   },
   "dankKDEConnect": {
@@ -61,5 +61,8 @@
   },
   "developerUtilities": {
     "enabled": true
+  },
+  "niriWindows": {
+    "enabled": false
   }
 }
