@@ -143,6 +143,7 @@ groups:
             - flutter-bin
             - visual-studio-code-bin
             - mongodb-compass
+            - objection # Frida tookit
 
   - name: creative
     conditions: [arch, creative]
