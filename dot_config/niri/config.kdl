@@ -121,6 +121,19 @@ window-rule {
     open-focused false
 }
 
+window-rule {
+    match app-id="solidtime"
+    default-floating-position x=11 y=11 relative-to="bottom-right"
+}
+
+window-rule {
+    match app-id="solidtime" is-floating=true
+    geometry-corner-radius 10
+    border {
+        width 1
+    }
+}
+
 layer-rule {
   match namespace="dms:slideout"
   match namespace="dms:clipboard$"
