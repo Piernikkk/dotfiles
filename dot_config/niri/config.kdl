@@ -2,6 +2,7 @@ include "dms/layout.kdl"
 include "dms/alttab.kdl"
 include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
+include "workspaces.kdl"
 
 input {
   keyboard {
@@ -134,6 +135,13 @@ window-rule {
     }
 }
 
+// Hide Bitwarden
+window-rule {
+    match app-id="Bitwarden"
+    block-out-from "screencast"
+}
+
+// Hide DMS notes and clipboard
 layer-rule {
   match namespace="dms:slideout"
   match namespace="dms:clipboard$"
