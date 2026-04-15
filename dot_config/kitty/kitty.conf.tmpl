@@ -7,6 +7,7 @@ include keybinds.conf
 allow_remote_control true
 
 text_fg_override_treshold 4.0
+scrollback_lines 10000
 
 {{ if eq .chezmoi.os "darwin" -}}
 hide_window_decorations titlebar-only
