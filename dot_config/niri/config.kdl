@@ -135,6 +135,17 @@ window-rule {
     }
 }
 
+// Blurs
+window-rule {
+    match app-id="^kitty$"
+    match app-id="^zen$"
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
 // Hide Bitwarden
 window-rule {
     match app-id="Bitwarden"
