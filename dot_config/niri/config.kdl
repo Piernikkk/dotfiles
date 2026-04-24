@@ -146,6 +146,26 @@ window-rule {
     }
 }
 
+layer-rule {
+    match namespace="vicinae"
+
+    background-effect {
+        blur true
+        xray false
+        noise 0.1
+    }
+
+
+    shadow {
+        on
+        // draw-behind-window true
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0006"
+    }
+}
+
 // Hide Bitwarden
 window-rule {
     match app-id="Bitwarden"
@@ -166,7 +186,7 @@ binds {
   Mod+RETURN  hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
   Mod+Z       hotkey-overlay-title="Open Zen Browser" { spawn "zen-browser"; }
   Mod+Shift+Z hotkey-overlay-title="Open Zed Editor" { spawn "zed"; }
-  MOD+SPACE   hotkey-overlay-title="Open App Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+  MOD+SPACE   hotkey-overlay-title="Open App Launcher" repeat=false { spawn "vicinae" "toggle"; } // { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
   MOD+V       hotkey-overlay-title="Open Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
   Mod+Slash   hotkey-overlay-title="Open Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
   Mod+E   hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
