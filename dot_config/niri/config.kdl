@@ -186,6 +186,7 @@ binds {
   Mod+RETURN  hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
   Mod+Z       hotkey-overlay-title="Open Zen Browser" { spawn "zen-browser"; }
   Mod+Shift+Z hotkey-overlay-title="Open Zed Editor" { spawn "zed"; }
+  Mod+S       hotkey-overlay-title="Open Signal" { spawn "signal-desktop"; }
   MOD+SPACE   hotkey-overlay-title="Open App Launcher" repeat=false { spawn "vicinae" "toggle"; } // { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
   MOD+V       hotkey-overlay-title="Open Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
   Mod+Slash   hotkey-overlay-title="Open Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
