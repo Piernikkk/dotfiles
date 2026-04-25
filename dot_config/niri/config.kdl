@@ -2,6 +2,7 @@ include "dms/layout.kdl"
 include "dms/alttab.kdl"
 include "dms/wpblur.kdl"
 include "dms/cursor.kdl"
+include "dms/outputs.kdl"
 include "workspaces.kdl"
 
 input {
@@ -15,24 +16,6 @@ input {
   warp-mouse-to-focus
   focus-follows-mouse max-scroll-amount="20%"
   workspace-auto-back-and-forth
-}
-
-output "DP-6" {
-  mode "1920x1080@100"
-  scale 1
-  position x=0 y=72
-}
-
-output "DP-5" {
-  mode "3840x2160@60"
-  scale 1.875
-  position x=1920 y=0
-}
-
-output "DP-4" {
-  mode "3840x2160@60"
-  scale 1.875
-  position x=3840 y=0
 }
 
 layout {
@@ -163,6 +146,25 @@ layer-rule {
         spread 5
         offset x=0 y=5
         color "#0006"
+    }
+}
+
+// Blur the background behind pop-up menus in Loupe.
+window-rule {
+    // match app-id="Loupe"
+
+    popups {
+        // Matches the default libadwaita pop-up corner radius.
+        geometry-corner-radius 15
+
+        // Note: it'll look better to set background opacity
+        // through your GTK theme CSS and not here.
+        // This is just an example that makes it look obvious.
+        opacity 0.5
+
+        background-effect {
+            blur true
+        }
     }
 }
 
