@@ -83,11 +83,11 @@ window-rule {
     clip-to-geometry true
 }
 
-layer-rule {
-    match namespace="dms:slideout"
-    match namespace="dms:clipboard$"
-    block-out-from "screencast"
-}
+// layer-rule {
+//     match namespace="dms:slideout"
+//     match namespace="dms:clipboard$"
+//     block-out-from "screencast"
+// }
 
 window-rule {
     match app-id="firefox$" title="^Picture-in-Picture$"
@@ -106,12 +106,12 @@ window-rule {
 }
 
 window-rule {
-    match app-id="solidtime"
+    match title="solidtime"
     default-floating-position x=11 y=11 relative-to="bottom-right"
 }
 
 window-rule {
-    match app-id="solidtime" is-floating=true
+    match title="solidtime" is-floating=true
     geometry-corner-radius 10
     border {
         width 1
@@ -339,7 +339,7 @@ binds {
 
   Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-  Mod+Shift+Escape { quit; }
+  Mod+Shift+Escape allow-inhibiting=false { focus-window-previous; }
   Ctrl+Alt+Delete  { quit; }
   Mod+Ctrl+Escape  { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
 
