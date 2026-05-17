@@ -155,6 +155,21 @@ window-rule {
     block-out-from "screencast"
 }
 
+// Float DaVinci Resolve startup screen
+window-rule {
+  match title="resolve" app-id="resolve"
+  baba-is-float true
+  open-floating true
+
+  border {
+    off
+  }
+
+  shadow {
+    color "#0004"
+  }
+}
+
 // Hide DMS notes and clipboard
 layer-rule {
   match namespace="dms:slideout"
