@@ -135,7 +135,7 @@ layer-rule {
     background-effect {
         blur true
         xray false
-        noise 0.1
+        noise 0.05
     }
 
 
