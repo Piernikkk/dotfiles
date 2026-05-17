@@ -149,6 +149,16 @@ layer-rule {
     }
 }
 
+window-rule {
+    match app-id="vicinae"
+
+    background-effect {
+        blur true
+        xray false
+        noise 0.05
+    }
+}
+
 // Hide Bitwarden
 window-rule {
     match app-id="Bitwarden"
