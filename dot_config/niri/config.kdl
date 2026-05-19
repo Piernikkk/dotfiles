@@ -204,6 +204,8 @@ binds {
   Mod+Shift+T hotkey-overlay-title="Open Solidtime" { spawn "solidtime"; }
   Mod+W       hotkey-overlay-title="Control WLED" { spawn "vicinae" "vicinae://launch/@creative-koda-lab/store.raycast.wled-controller/index"; }
 
+  Mod+Ctrl+Alt+C hotkey-overlay-title="Toggle secondary displays" { spawn "nu" "~/.config/niri/scripts/toggleDisplays.nu"; }
+
   Mod+P hotkey-overlay-title="Lock Screen" { spawn "loginctl" "lock-session"; }
 
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
