@@ -167,7 +167,7 @@ window-rule {
 
 // Float DaVinci Resolve startup screen
 window-rule {
-  match title="resolve" app-id="resolve"
+  match title="resolve" app-id="resolve" is-floating=true
   baba-is-float true
   open-floating true
 
