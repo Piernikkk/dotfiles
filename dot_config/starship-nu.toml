@@ -3,8 +3,8 @@
 
 [battery]
 display = [
-    { style = "red bold", threshold = 10 },
-    { style = "yellow bold", threshold = 20 },
+  { style = "red bold", threshold = 10 },
+  { style = "yellow bold", threshold = 20 },
 ]
 
 [shell]
