@@ -29,5 +29,7 @@ $env.PATH ++= [
 
 source "themes/fzf_catppuccin_mocha.nu"
 
+source "keybinds.nu"
+
 zoxide init nushell | save -f ~/.zoxide.nu
 
