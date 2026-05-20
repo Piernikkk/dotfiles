@@ -27,5 +27,7 @@ $env.PATH ++= [
     ($env.HOME | path join ".cargo/bin")
 ]
 
+source "themes/fzf_catppuccin_mocha.nu"
+
 zoxide init nushell | save -f ~/.zoxide.nu
 
