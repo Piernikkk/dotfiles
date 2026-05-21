@@ -119,6 +119,11 @@ window-rule {
 }
 
 // Blurs
+blur {
+    passes 4
+    offset 3.5
+}
+
 window-rule {
     match app-id="^kitty$"
     match app-id="^zen$"
