@@ -43,5 +43,5 @@ $env.PROMPT_INDICATOR_VI_NORMAL = ""
 $env.config.show_banner = false
 
 # Load Starship
-mkdir ($nu.data-dir | path join "vendor/autoload")
+nu-mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")

@@ -215,6 +215,7 @@ binds {
   Mod+D       hotkey-overlay-title="Open Discord" { spawn "discord"; }
   Mod+Shift+T hotkey-overlay-title="Open Solidtime" { spawn "solidtime"; }
   Mod+W       hotkey-overlay-title="Control WLED" { spawn "vicinae" "vicinae://launch/@creative-koda-lab/store.raycast.wled-controller/index"; }
+  Mod+A       hotkey-overlay-title="Toggle control center" { spawn "dms" "ipc" "control-center" "toggle"; }
 
   Mod+Ctrl+Alt+C hotkey-overlay-title="Toggle secondary displays" { spawn "nu" "~/.config/niri/scripts/toggleDisplays.nu"; }
 

@@ -1,6 +1,8 @@
 alias cd = z
 alias cat = bat
 alias dc = docker compose
+alias nu-mkdir = mkdir
+alias mkdir = ^mkdir
 alias p = cd ~/Documents/Projekty
 # alias ls = eza
 
