@@ -5,6 +5,7 @@
   "font": {
     "rendering": "qt",
     "normal": {
+      // Doesn't work for now, see https://github.com/vicinaehq/vicinae/issues/1022
       "family": "Google Sans Medium",
       "size": 10.5
     }
@@ -21,6 +22,7 @@
       "enabled": true
     },
     "layer_shell": {
+      // Allows the windo to be on top of everything in Niri
       "layer": "overlay"
     }
   },
