@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vicinae.com/schemas/config.json",
+  "close_on_focus_loss": false,
+  "pop_to_root_on_close": true,
+  "font": {
+    "rendering": "qt",
+    "normal": {
+      "family": "Google Sans Medium",
+      "size": 10.5
+    }
+  },
+  "theme": {
+    "dark": {
+      "name": "catppuccin-mocha",
+      "icon_theme": "Adwaita"
+    }
+  },
+  "launcher_window": {
+    "opacity": 0.85,
+    "client_side_decorations": {
+      "enabled": true
+    },
+    "layer_shell": {
+      "layer": "overlay"
+    }
+  },
+  "providers": {
+    "@Costeer/store.vicinae.color-converter": {
+      "entrypoints": {
+        "convert-color": {
+          "alias": "cc"
+        }
+      }
+    },
+    "clipboard": {
+      "preferences": {
+        "encryption": true,
+        "eraseOnStartup": false,
+        "ignorePasswords": true,
+        "monitoring": true
+      },
+      "entrypoints": {
+        "history": {
+          "enabled": true,
+          "preferences": {
+            "defaultAction": "copy"
+          }
+        }
+      }
+    },
+    "core": {
+      "entrypoints": {
+        "search-emojis": {
+          "alias": ":"
+        }
+      }
+    },
+    "files": {
+      "entrypoints": {
+        "search": {
+          "alias": "f"
+        }
+      }
+    }
+  }
+}
