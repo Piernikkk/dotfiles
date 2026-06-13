@@ -171,9 +171,16 @@ window-rule {
 }
 
 // Float DaVinci Resolve startup screen
+// window-rule {
+//   match title="resolve" app-id="resolve"
+//   open-floating true
+// }
+
 window-rule {
-  match title="resolve" app-id="resolve"
+  match title="Search Actions" app-id="gimp"
   open-floating true
+  default-column-width { proportion 0.4; }
+  default-window-height { proportion 0.4; }
 }
 
 window-rule {
