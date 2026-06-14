@@ -78,11 +78,6 @@ overview {
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &"
 spawn-sh-at-startup "wl-paste --watch cliphist store &"
 
-window-rule {
-    geometry-corner-radius 10
-    clip-to-geometry true
-}
-
 // layer-rule {
 //     match namespace="dms:slideout"
 //     match namespace="dms:clipboard$"
