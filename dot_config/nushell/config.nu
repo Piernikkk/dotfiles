@@ -7,7 +7,7 @@
 # (or import) custom commands, or run any other startup tasks.
 # See https://www.nushell.sh/book/configuration.html
 #
-# Nushell sets "sensible defaults" for most configuration settings, 
+# Nushell sets "sensible defaults" for most configuration settings,
 # so your `config.nu` only needs to override these defaults if desired.
 #
 # You can open this file in your default editor using:
@@ -22,13 +22,7 @@ source ~/.zoxide.nu
 
 # Load configuration
 source "aliases.nu"
-source "themes/catppuccin_mocha.nu"
 
-$env.config.edit_mode = 'vi'
-$env.config.cursor_shape = {
-    vi_insert: line
-    vi_normal: block
-}
 # $env.config.color_config = {
 #     shape_garbage: { fg: "#f38ba8" attr: b }
 #     shape_external: { fg: "#f38ba8" attr: b }

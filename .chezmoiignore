@@ -9,11 +9,3 @@
 .config/DankMaterialShell
 .config/paru
 {{ end -}}
-
-# macOS-specific configuration
-{{ if ne .chezmoi.os "darwin" -}}
-.config/sketchybar
-.config/yabai
-.config/skhd
-.config/borders
-{{ end -}}

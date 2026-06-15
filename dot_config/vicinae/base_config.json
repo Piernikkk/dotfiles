@@ -10,12 +10,6 @@
       "size": 10.5
     }
   },
-  "theme": {
-    "dark": {
-      "name": "catppuccin-mocha",
-      "icon_theme": "Adwaita"
-    }
-  },
   "launcher_window": {
     "opacity": 0.85,
     "client_side_decorations": {

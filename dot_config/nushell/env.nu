@@ -17,19 +17,14 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.USE_CCACHE = 1
-$env.CCACHE_EXEC = "/usr/bin/ccache"
-$env.EDITOR = "nvim"
+# $env.USE_CCACHE = 1
+# $env.CCACHE_EXEC = "/usr/bin/ccache"
+$env.EDITOR = "nano"
 $env.VISUAL = "zed --wait"
-$env.config.buffer_editor = "nvim"
+$env.config.buffer_editor = "nano"
 $env.PATH ++= [
     ($env.HOME | path join ".local/bin"),
     ($env.HOME | path join ".cargo/bin")
 ]
 
-source "themes/fzf_catppuccin_mocha.nu"
-
-source "keybinds.nu"
-
 zoxide init nushell | save -f ~/.zoxide.nu
-
